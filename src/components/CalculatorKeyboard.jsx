@@ -1,7 +1,14 @@
 import React from 'react'
 import CalculatorItem from './CalculatorItem';
 
-export default function CalculatorKeyboard({theme, stateTheme, operatorState, operandState, ...props}) {
+export default function CalculatorKeyboard({
+    theme, 
+    stateTheme, 
+    operatorState, 
+    operandState, 
+    resultState, 
+    ...props
+}) {
   
   const keyboardItems = [7, 8, 9, 'DEL', 
                         4, 5, 6, '+', 
@@ -35,6 +42,7 @@ export default function CalculatorKeyboard({theme, stateTheme, operatorState, op
                 theme = {theme}
                 operatorState = {operatorState}
                 operandState = {operandState}
+                resultState = {resultState}
             ></CalculatorItem>
         )
        }
